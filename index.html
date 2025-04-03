@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Delight</title>
+    <link rel="icon" href="https://th.bing.com/th/id/R.ec7e9cbe22aa43246147d6b95f83a270?rik=HDvW1WYOKuyRxg&riu=http%3a%2f%2fclipartmag.com%2fimages%2fdrinking-coffee-clipart-34.jpg&ehk=ole4VeseVtZPsnXiJUTQnChUhEeOy9CzxRmGQmKYc%2bE%3d&risl=&pid=ImgRaw&r=0" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header> 
+        <div class="header-container">
+            <img src="https://th.bing.com/th/id/OIP.NXu3yF_UK25hmL9CWsGBbAHaHa?w=194&h=195&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="logo" width="200" height="200" style="margin-top: 20px;">
+            <h1>Welcome to Café Delight</h1>
+            <button class="button button1"><a href="#contact">Contact Us</a></button>
+        </div>
+        <nav class="menu">
+            <a href="#">
+                Home
+                <span class="border border-top"></span>
+                <span class="border border-right"></span>
+                <span class="border border-bottom"></span>
+                <span class="border border-left"></span>
+            </a>
+            <a href="#pricing">
+                Menu
+                <span class="border border-top"></span>
+                <span class="border border-right"></span>
+                <span class="border border-bottom"></span>
+                <span class="border border-left"></span>
+            </a>
+            <a href="#pricing">
+                Pricing
+                <span class="border border-top"></span>
+                <span class="border border-right"></span>
+                <span class="border border-bottom"></span>
+                <span class="border border-left"></span>
+            </a>
+            <a href="#knowladge">
+                Knowladge
+                <span class="border border-top"></span>
+                <span class="border border-right"></span>
+                <span class="border border-bottom"></span>
+                <span class="border border-left"></span>
+            </a>
+            <a href="#contact">
+                Contact
+                <span class="border border-top"></span>
+                <span class="border border-right"></span>
+                <span class="border border-bottom"></span>
+                <span class="border border-left"></span>
+            </a>
+        </nav>
+    </header>
+    <section>
+        <div class="menu-container">
+            <div class="coffee-card">
+              <img src="https://www.tasteofhome.com/wp-content/uploads/2023/03/TOH-espresso-GettyImages-1291298315-JVcrop.jpg" alt="Espresso">
+              <div class="coffee-name">Espresso</div>
+              <div class="coffee-description">A bold and rich black coffee brewed with finely ground espresso beans, perfect for an energizing start.</div>
+            </div>
+        
+            <div class="coffee-card">
+              <img src="https://www.tastingtable.com/img/gallery/how-the-us-helped-the-lattes-global-popularity-skyrocket/intro-1674148261.jpg" alt="Latte">
+              <div class="coffee-name">Latte</div>
+              <div class="coffee-description">A smooth espresso combined with steamed milk and a small layer of foam, ideal for those who enjoy a creamy coffee experience.</div>
+            </div>
+        
+            <div class="coffee-card">
+              <img src="https://www.sessioncoffeedenver.com/wp-content/uploads/2024/06/how-to-make-a-cappuccino.jpg" alt="Cappuccino">
+              <div class="coffee-name">Cappuccino</div>
+              <div class="coffee-description">Espresso, steamed milk, and a thick layer of foam come together to create a well-balanced and rich coffee experience.</div>
+            </div>
+        
+            <div class="coffee-card">
+              <img src="https://cdn.recetasderechupete.com/wp-content/uploads/2023/11/Cafe-americano-portada.jpg" alt="Americano">
+              <div class="coffee-name">Americano</div>
+              <div class="coffee-description">Espresso diluted with hot water, resulting in a smooth and bold coffee flavor that’s less intense than straight espresso.</div>
+            </div>
+          </div>
+    </section>
+    <section id="pricing">
+        <table class="table">
+            <caption>Our Coffee Menu</caption>
+            <thead>
+                <tr>
+                    <th>Coffee Type</th>
+                    <th>Size</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Espresso</td>
+                    <td>
+                        <select id="espressoSize" onchange="updatePrice('espresso')">
+                            <option value="small">Small</option>
+                            <option value="medium">Medium</option>
+                            <option value="large">Large</option>
+                        </select>
+                    </td>
+                    <td><span id="espressoPrice" class="price">$2.50</span></td>
+                </tr>
+                <tr>
+                    <td>Cappuccino</td>
+                    <td>
+                        <select id="cappuccinoSize" onchange="updatePrice('cappuccino')">
+                            <option value="small">Small</option>
+                            <option value="medium">Medium</option>
+                            <option value="large">Large</option>
+                        </select>
+                    </td>
+                    <td><span id="cappuccinoPrice" class="price">$3.75</span></td>
+                </tr>
+                <tr>
+                    <td>Latte</td>
+                    <td>
+                        <select id="latteSize" onchange="updatePrice('latte')">
+                            <option value="small">Small</option>
+                            <option value="medium">Medium</option>
+                            <option value="large">Large</option>
+                        </select>
+                    </td>
+                    <td><span id="lattePrice" class="price">$4.00</span></td>
+                </tr>
+                <tr>
+                    <td>Americano</td>
+                    <td>
+                        <select id="americanoSize" onchange="updatePrice('americano')">
+                            <option value="small">Small</option>
+                            <option value="medium">Medium</option>
+                            <option value="large">Large</option>
+                        </select>
+                    </td>
+                    <td><span id="americanoPrice" class="price">$3.00</span></td>
+                </tr>
+                <tr>
+                    <td>Mocha</td>
+                    <td>
+                        <select id="mochaSize" onchange="updatePrice('mocha')">
+                            <option value="small">Small</option>
+                            <option value="medium">Medium</option>
+                            <option value="large">Large</option>
+                        </select>
+                    </td>
+                    <td><span id="mochaPrice" class="price">$4.50</span></td>
+                </tr>
+                <tr>
+                    <td>Flat White</td>
+                    <td>
+                        <select id="flatWhiteSize" onchange="updatePrice('flatWhite')">
+                            <option value="small">Small</option>
+                            <option value="medium">Medium</option>
+                            <option value="large">Large</option>
+                        </select>
+                    </td>
+                    <td><span id="flatWhitePrice" class="price">$3.25</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <div id="knowladge">
+        <h2>Coffee Brewing Methods</h2>
+        <ul class="brewing-list">
+            <li>
+                <span class="method-title">French Press:</span>
+                <p class="description">A classic immersion method that produces rich, full-bodied coffee.</p>
+            </li>
+            <li>
+                <span class="method-title">Pour-Over:</span>
+                <p class="description">Allows precise control over water flow for a clean, balanced cup.</p>
+            </li>
+            <li>
+                <span class="method-title">AeroPress:</span>
+                <p class="description">Quick and versatile, ideal for single servings of smooth coffee.</p>
+            </li>
+            <li>
+                <span class="method-title">Cold Brew:</span>
+                <p class="description">Steeping coffee in cold water for a refreshing and mellow flavor.</p>
+            </li>
+        </ul>
+    </div>
+    <footer id="contact">
+        <p>&copy; 2025 Café Delight. All Rights Reserved.</p>
+        <p>Contact us: <a href="mailto:info@cafédelight.com">info@cafédelight.com</a></p>
+    </footer>
+    </footer>
+    <script>
+        const menuItems = document.querySelectorAll(".menu a");
+
+        menuItems.forEach(item => {
+        item.addEventListener("click", function(e) {
+            menuItems.forEach(menu => menu.classList.remove("active"));
+            this.classList.add("active");
+        });
+        });
+
+        // Prices for different sizes
+        const prices = {
+            espresso: { small: 2.50, medium: 3.00, large: 3.50 },
+            cappuccino: { small: 3.75, medium: 4.25, large: 4.75 },
+            latte: { small: 4.00, medium: 4.50, large: 5.00 },
+            americano: { small: 3.00, medium: 3.50, large: 4.00 },
+            mocha: { small: 4.50, medium: 5.00, large: 5.50 },
+            flatWhite: { small: 3.25, medium: 3.75, large: 4.25 }
+        };
+
+        // Function to update price based on size selection
+        function updatePrice(coffeeType) {
+            const size = document.getElementById(coffeeType + 'Size').value;
+            const price = prices[coffeeType][size];
+            document.getElementById(coffeeType + 'Price').textContent = '$' + price.toFixed(2);
+        }
+    </script>
+</body>
+</html>
